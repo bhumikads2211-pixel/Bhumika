@@ -1,5 +1,5 @@
 from django.core.wsgi import get_wsgi_application
-from vercel_wsgi import handle
+from api import handle
 import os
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'loginmodules.settings')
