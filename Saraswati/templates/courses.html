@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .courses-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .courses-section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .course-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 0;
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .course-content {
+      padding: 20px;
+    }
+
+    .course-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2980b9;
+      margin-bottom: 8px;
+    }
+
+    .course-language {
+      font-size: 15px;
+      font-weight: 500;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .course-description {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="courses-section">
+    <h2>My Courses</h2>
+    <div class="courses-container">
+
+      <!-- Course 1 -->
+      <div class="course-card">
+        
+        <div class="course-content">
+          <div class="course-title">JavaScript Essentials</div>
+          <div class="course-language">Language: JavaScript</div>
+          <div class="course-description">
+            Learn the fundamentals of JavaScript, including variables, functions, DOM manipulation, and ES6 features.
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="course-card">
+       
+        <div class="course-content">
+          <div class="course-title">Python for Beginners</div>
+          <div class="course-language">Language: Python</div>
+          <div class="course-description">
+            A beginner-friendly course covering Python syntax, data types, loops, and basic projects for hands-on practice.
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="course-card">
+        
+        <div class="course-content">
+          <div class="course-title">Responsive Web Design</div>
+          <div class="course-language">Languages: HTML & CSS</div>
+          <div class="course-description">
+            Build modern websites using HTML5 and CSS3. Learn layout techniques, media queries, and Flexbox/Grid.
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="course-card">
+       
+        <div class="course-content">
+          <div class="course-title">C++ Programming Basics</div>
+          <div class="course-language">Language: C++</div>
+          <div class="course-description">
+            Understand the fundamentals of C++ programming including OOP, functions, classes, and memory management.
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 5 -->
+      <div class="course-card">
+       
+        <div class="course-content">
+          <div class="course-title">Java Fundamentals</div>
+          <div class="course-language">Language: Java</div>
+          <div class="course-description">
+            Learn object-oriented programming, classes, inheritance, and basic data structures using Java.
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 6 -->
+      <div class="course-card">
+        
+        <div class="course-content">
+          <div class="course-title">Intro to Databases with SQL</div>
+          <div class="course-language">Language: SQL</div>
+          <div class="course-description">
+            Explore relational databases, SQL queries, filtering, joining tables, and working with real-world datasets.
+          </div>
+        </div>
+      </div>
+      <a href="/webpg" class="login"> </a>
+    </div>
+  </section>
+
+</body>
+</html>

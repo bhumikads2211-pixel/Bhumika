@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background-color: plum;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    .login-container {
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      background: linear-gradient(77deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .login-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-container label {
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-container input[type="submit"] {
+      background-color:(77deg,rgba(224, 92, 147, 1) 0%, rgba(148, 187, 233, 1) 100%);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background-color:rgba(224, 92, 147, 1);
+    }
+
+    .login-container .extra-links {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .login-container .extra-links a {
+      color: rgba(224, 92, 147, 1)4%;
+      text-decoration: none;
+    }
+    body{
+    background-image:linear-gradient(170deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="/login/" method="post">
+      <!-- If using Django, include CSRF token -->
+      <!-- {% csrf_token %} -->
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <input type="submit" value="Login" />
+
+      <div class="extra-links">
+        <p><a href="/webpg" class="login">Go to Webpage </a></p>
+    
+      </div>
+    </form>
+  </div>
+</body>
+</html>

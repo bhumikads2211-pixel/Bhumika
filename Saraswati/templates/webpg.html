@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Subcom</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: ivory;
+    }
+
+    .content {
+      display: flex;
+      width: 100%;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-image:radial-gradient(circle,rgba(238, 174, 202, 1) 4%, rgba(148, 187, 233, 1) 100%);
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul.menu li,
+    .sidebar ul.account li {
+      padding: 12px 0;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .sidebar hr {
+      margin: 20px 0;
+      border: 0.5px solid gray;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .login, .logout {
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    .login {
+      background-color: #fa8abb;
+    }
+
+    .logout {
+      background-color:#FD1D1D;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .boxes {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: white;
+      width: 200px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10%;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div>
+        <h2>Subcom</h2>
+
+        <ul class="menu">
+          <li>Dashboard</li>
+          <a href="courses"><li>My Course</li></a>
+          <a href="certificates"><li>certificate</li></a>
+          <li>Questions</li>
+        </ul>
+
+        <hr/>
+
+        <ul class="account">
+          <li>Settings</li>
+          <li>Help</li>
+        </ul>
+
+        <!-- Login & Logout Buttons -->
+        <div class="btn-group">
+          <a href="/login" class="login">Login</a>
+          <button class="logout">Logout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>Welcome to My Dashboard</h1>
+      <div class="boxes">
+        <div class="box">Attendance</div>
+        <div class="box">Time Table</div>
+        <div class="box">Results</div>
+        <div class="box">Review</div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
